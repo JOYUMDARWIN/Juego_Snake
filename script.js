@@ -4,9 +4,14 @@ const scoreBoard = document.getElementById("scoreBoard");
 const startButton = document.getElementById("start");
 const gameOverSign = document.getElementById("gameOver");
 
+const upButton = document.getElementById("upButton");
+const rightButton = document.getElementById("rightButton");
+const downButton = document.getElementById("downButton");
+const leftButton = document.getElementById("leftButton");
+
 //Game Settings
 const boardSize = 10;
-const gameSpeed = 200;
+const gameSpeed = 400;
 const squareTypes = {
   emptySquare: 0,
   snakeSquare: 1,
@@ -34,7 +39,7 @@ const drawSnake = () => {
 // Rellena cada cuadro del tablero
 //parametros:
 // square: posición del cuadro
-// type: tipo de ciadro (emptyScuare, anakeScuare o footScuare);
+// type: tipo de cuadro (emptyScuare, anakeScuare o footScuare);
 
 const drawSquare = (square, type) => {
   const [row, column] = square.split("");
@@ -158,3 +163,24 @@ const startGame = () => {
 };
 
 startButton.addEventListener("click", startGame);
+
+upButton.addEventListener("click", () => {
+  if (direction != "ArrowDown") {
+    setDirection("ArrowUp");
+  }
+});
+rightButton.addEventListener("click", () => {
+  if (direction != "ArrowLeft") {
+    setDirection("ArrowRight");
+  }
+});
+downButton.addEventListener("click", () => {
+  if (direction != "ArrowUp") {
+    setDirection("ArrowDown");
+  }
+});
+leftButton.addEventListener("click", () => {
+  if (direction != "ArrowRight") {
+    setDirection("ArrowLeft");
+  }
+});

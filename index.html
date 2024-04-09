@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&family=Share+Tech+Mono&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&family=Share+Tech+Mono&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
     <script src="script.js" type="text/javascript" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="board"></div>
     <div class="boardInfo">
-        <div>
-            Score: <div id="scoreBoard"></div>
-        </div>
-        <button id="start">Start</button>
+      <div>
+        Score:
+        <div id="scoreBoard"></div>
+      </div>
+      <button id="start">Start</button>
     </div>
     <div id="gameOver">Game Over</div>
-</body>
+    <div class="gameButtons">
+      <button id="upButton" class="arrowButton"></button>
+      <button id="downButton" class="arrowButton"></button>
+      <button id="leftButton" class="arrowButton"></button>
+      <button id="rightButton" class="arrowButton"></button>
+    </div>
+  </body>
 </html>
